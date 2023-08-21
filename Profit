@@ -1,0 +1,26 @@
+'''
+Emilia Menchaca
+COSC1315
+Ch1 Practice
+A company has determined that its annual profit is typically 23 percent of total sales.
+Write a program that asks the user to enter the projected amount of total sales, and then
+displays the profit that will be made from that amount.
+Hint: Use the value 0.23 to represent 23 percent
+'''
+def main():
+    #variables
+    profit = 0.0
+    totalSales = 0.0
+    percent = .23
+
+    #ask the user to enter projected amount of total sales
+    totalSales = float(input('Enter projected amount of total sales: $'))
+
+    #calculations
+    profit = totalSales * percent
+
+    #display 
+    print('Profit made from total sales: $', profit)
+
+
+main()
