@@ -15,11 +15,11 @@ def main():
     
 
     #input item prices
-    for itemPrice in range(5):
-        itemPrice = float(input('Please enter price of item: $'))
-        subtotal += itemPrice
+    for itemPrice in range(5):  #begins the loop with  iterations
+        itemPrice = float(input('Please enter price of item: $')) #user input line
+        subtotal += itemPrice  #accumulator 
     
-
+    #calculations
     salesTax = subtotal * Tax
     total = subtotal + total + salesTax
 
