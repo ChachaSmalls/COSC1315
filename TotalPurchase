@@ -1,0 +1,32 @@
+'''
+program that asks for the price of
+each item, and then displays the subtotal of the sale, the amount of sales tax, and the total.
+Assume the sales tax is 7 percent
+'''
+
+def main():
+    #variables
+    itemPrice = 0.0
+    subtotal = 0.0
+    Tax = .07
+    salesTax = 0.0
+    total = 0.0
+    
+    
+
+    #input item prices
+    for itemPrice in range(5):
+        itemPrice = float(input('Please enter price of item: $'))
+        subtotal += itemPrice
+    
+
+    salesTax = subtotal * Tax
+    total = subtotal + total + salesTax
+
+    #display
+    print('Subtotal: $', format(subtotal, '.2f'))
+    print('Sales Tax: $', format(salesTax, '.2f'))
+    print('Total: $', format(total, '.2f'))
+
+
+main()
